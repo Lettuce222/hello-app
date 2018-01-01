@@ -54,7 +54,8 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
  
-  root "hello#goodbye"
- 
+  root "hello#view"
+  get "hello/goodbye"
+
   #match ':controller(/action(/:id))', via: [ :get, :post:, :patch]
 end
